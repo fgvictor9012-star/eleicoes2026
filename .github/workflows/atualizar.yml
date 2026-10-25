@@ -1,10 +1,8 @@
-
 name: Atualizar resultados do TSE
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
-
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -13,79 +11,71 @@ permissions:
   id-token: write
 
 concurrency:
-  group: eleicoes2026-deploy
+  group: eleicoes2026-pages
   cancel-in-progress: false
 
 jobs:
   atualizar:
     name: Atualizar e publicar portal
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Baixar arquivos do portal
+      - name: Baixar versao atual do repositorio
         uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Conferir a versao do HTML
+        shell: bash
+        run: |
+          echo "Commit publicado:" 
+          git rev-parse HEAD
+          test -f index.html
+          if ! grep -q 'PORTAL-2026-VISUAL-FINAL-2510' index.html; then
+            echo 'ERRO: index.html antigo. A versao visual nova nao foi encontrada.'
+            exit 1
+          fi
+          echo 'OK: HTML novo encontrado, com estilos incorporados.'
 
       - name: Preparar Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
       - name: Instalar dependencias
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install requests
+        run: python -m pip install requests
 
       - name: Consultar dados oficiais do TSE
-        run: |
-          echo "Iniciando consulta ao TSE..."
-          python update.py
+        run: python update.py
 
-      - name: Conferir arquivos essenciais
+      - name: Montar site sem arquivos antigos
+        shell: bash
         run: |
-          test -f index.html
-          test -f app.js
-          test -f estilo.css
-          echo "Arquivos do portal encontrados."
-          echo "Arquivos JSON encontrados:"
-          find . -type f -name "*.json" -print
+          rm -rf _site
+          mkdir -p _site
+          cp index.html _site/index.html
+          if [ -d data ]; then cp -R data _site/data; fi
+          if [ -d dados ]; then cp -R dados _site/dados; fi
+          touch _site/.nojekyll
+          grep -q 'PORTAL-2026-VISUAL-FINAL-2510' _site/index.html
+          echo 'OK: arquivo novo incluído na pasta de publicacao.'
+          ls -lah _site
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Preparar site para publicacao
-        run: |
-          mkdir -p _site
-
-          cp index.html _site/
-          cp app.js _site/
-          cp estilo.css _site/
-
-          if [ -d dados ]; then
-            cp -R dados _site/
-          fi
-
-          if [ -d data ]; then
-            cp -R data _site/
-          fi
-
-          touch _site/.nojekyll
-
-          echo "Arquivos preparados para publicacao."
-
-      - name: Enviar arquivos do portal
+      - name: Enviar site
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
-      - name: Publicar portal
+      - name: Publicar site
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Confirmar publicacao
-        run: |
-          echo "Portal publicado com sucesso."
-          echo "URL: ${{ steps.deployment.outputs.page_url }}"
+      - name: Mostrar endereco publicado
+        run: echo 'Publicado em ${{ steps.deployment.outputs.page_url }}'
