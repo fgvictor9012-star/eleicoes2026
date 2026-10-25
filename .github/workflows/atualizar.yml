@@ -1,3 +1,4 @@
+
 name: Atualizar resultados do TSE
 
 on:
@@ -6,56 +7,76 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
 concurrency:
-  group: portal-eleicoes
+  group: eleicoes2026-deploy
   cancel-in-progress: false
 
 jobs:
   atualizar:
+    name: Atualizar e publicar portal
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Baixar arquivos do portal
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Preparar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
 
       - name: Instalar dependencias
-        run: pip install requests
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Consultar resultados do TSE
-        run: python update.py
+      - name: Consultar dados oficiais do TSE
+        run: |
+          echo "Iniciando consulta eleitoral..."
+          python update.py
 
-      - name: Consultar resultados do TSE
-        run: python update.py
+      - name: Conferir arquivos do portal
+        run: |
+          test -f index.html || exit 1
+          echo "Pagina inicial encontrada."
+          echo "Arquivos de dados:"
+          find . -type f -name "*.json" -print
 
-      - name: Preparar GitHub Pages
+      - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Enviar arquivos do site
+      - name: Preparar pacote de publicacao
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp app.js _site/
+          cp estilo.css _site/
+          if [ -d dados ]; then cp -R dados _site/; fi
+          if [ -d data ]; then cp -R data _site/; fi
+          touch _site/.nojekyll
+
+      - name: Enviar arquivos para publicacao
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: _site
 
-      - name: Publicar portal
+      - name: Publicar portal atualizado
+        id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Preparar GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Enviar arquivos do site
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "."
-
-      - name: Publicar portal
-        uses: actions/deploy-pages@v4
+      - name: Confirmar publicacao
+        run: |
+          echo "Publicacao executada."
+          echo "Endereco: ${{ steps.deployment.outputs.page_url }}"
