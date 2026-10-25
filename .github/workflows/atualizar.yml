@@ -35,15 +35,19 @@ jobs:
       - name: Consultar resultados do TSE
         run: python update.py
 
-      - name: Salvar dados atualizados
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if ! git diff --cached --quiet; then
-            git commit -m "Atualizacao automatica dos resultados"
-            git push
-          fi
+      - name: Consultar resultados do TSE
+        run: python update.py
+
+      - name: Preparar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Enviar arquivos do site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Publicar portal
+        uses: actions/deploy-pages@v4
 
       - name: Preparar GitHub Pages
         uses: actions/configure-pages@v5
