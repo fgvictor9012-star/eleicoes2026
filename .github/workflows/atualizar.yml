@@ -1,9 +1,10 @@
+
 name: Atualizar resultados do TSE
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: read
@@ -11,80 +12,66 @@ permissions:
   id-token: write
 
 concurrency:
-  group: eleicoes2026-pages
+  group: eleicoes2026-deploy
   cancel-in-progress: false
 
 jobs:
   atualizar:
     name: Atualizar e publicar portal
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Baixar versao principal do repositorio
+      - name: Baixar arquivos do portal
         uses: actions/checkout@v4
         with:
           ref: main
-          persist-credentials: false
 
       - name: Validar HTML correto antes de atualizar
-        shell: bash
         run: |
-          set -euo pipefail
-          test -s index.html
-          grep -Fq 'PORTAL-2026-VISUAL-FINAL-2510' index.html
-          grep -Fq '<style>' index.html
-          grep -Fq 'VERSÃO VISUAL 25/10' index.html
-          echo 'OK: HTML novo encontrado, com CSS integrado.'
-          echo "Commit utilizado: $(git rev-parse --short HEAD)"
+          echo "Verificando versao do HTML..."
+          grep -q 'PORTAL-2026-VISUAL-FINAL-2510' index.html
+          grep -q '<style>' index.html
+          echo "OK: HTML novo encontrado, com CSS integrado."
 
       - name: Preparar Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Instalar dependencias
         run: python -m pip install requests
 
-      - name: Consultar dados oficiais do TSE
+      - name: Consultar resultados oficiais do TSE
         run: python update.py
 
-      - name: Verificar resultado da coleta
-        shell: bash
+      - name: Preparar arquivos para publicacao
         run: |
-          set -euo pipefail
-          test -s data/results.json
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          d=json.loads(Path('data/results.json').read_text(encoding='utf-8'))
-          print('Consulta:',d.get('checked_at'))
-          print('Consultas bem-sucedidas:',d.get('success_this_check'))
-          print('Falhas:',d.get('errors_count'))
-          print('Registros:',len(d.get('results', [])))
-          PY
+          mkdir -p _site
+
+          cp index.html _site/index.html
+
+          if [ -d data ]; then
+            cp -R data _site/
+          fi
+
+          if [ -d dados ]; then
+            cp -R dados _site/
+          fi
+
+          touch _site/.nojekyll
+
+          grep -q 'PORTAL-2026-VISUAL-FINAL-2510' _site/index.html
+
+          echo "OK: versao correta preparada para publicacao."
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Preparar site para publicacao
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p _site
-          cp index.html _site/index.html
-          if [ -f app.js ]; then cp app.js _site/; fi
-          if [ -f estilo.css ]; then cp estilo.css _site/; fi
-          if [ -d dados ]; then cp -R dados _site/; fi
-          cp -R data _site/
-          touch _site/.nojekyll
-          grep -Fq 'PORTAL-2026-VISUAL-FINAL-2510' _site/index.html
-          grep -Fq '<style>' _site/index.html
-          echo 'OK: arquivo HTML correto preparado para publicacao.'
-
-      - name: Enviar pacote unico do site
+      - name: Enviar site
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
@@ -95,5 +82,5 @@ jobs:
 
       - name: Confirmar publicacao
         run: |
-          echo 'GitHub Pages: ${{ steps.deployment.outputs.page_url }}'
-          echo 'Confira o selo VERSÃO VISUAL 25/10 no site.'
+          echo "Publicacao concluida."
+          echo "URL: ${{ steps.deployment.outputs.page_url }}"
