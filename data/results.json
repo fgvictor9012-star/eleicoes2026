@@ -1,1 +1,2449 @@
-{"project":"Observatório Eleitoral 2026","checked_at":null,"success_this_check":0,"errors_count":0,"recent_errors":[],"coverage":"Brasil, 27 UFs e agregado exterior (ZZ). Municípios e países individuais ainda não integrados.","results":[]}
+{
+  "project": "Observatório Eleitoral 2026",
+  "checked_at": "2026-10-25T15:19:41.673399+00:00",
+  "success_this_check": 29,
+  "errors_count": 29,
+  "recent_errors": [
+    {
+      "uf": "BR",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "AC",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "AL",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "AP",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "AM",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "BA",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "CE",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "DF",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "ES",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "GO",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "MA",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    },
+    {
+      "uf": "MT",
+      "round": "2",
+      "error": "Sem votos válidos apurados"
+    }
+  ],
+  "coverage": "Brasil, 27 UFs e agregado exterior (ZZ). Municípios e países individuais ainda não integrados.",
+  "results": [
+    {
+      "uf": "AC",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 302807,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 134770,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 13523,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 8594,
+          "party": "PSD"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 7980,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 573,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 314,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 215,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 140,
+          "party": "PCB"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 71,
+          "party": "PSTU"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 40,
+          "party": "PCO"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 39,
+          "party": "DEMOCRATA"
+        }
+      ],
+      "valid_votes": 469066,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:40",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ac/ac-c0001-e006257-u.json"
+    },
+    {
+      "uf": "AL",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 995459,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 735718,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 42427,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 26851,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 14198,
+          "party": "PSD"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 1345,
+          "party": "UP"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 1168,
+          "party": "NOVO"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 636,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 431,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 267,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 246,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 110,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 1818856,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:41",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/al/al-c0001-e006257-u.json"
+    },
+    {
+      "uf": "AM",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 1046996,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 976764,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 77531,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 35411,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 28310,
+          "party": "PSD"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 1867,
+          "party": "UP"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 1781,
+          "party": "NOVO"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 929,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 457,
+          "party": "PSTU"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 291,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 265,
+          "party": "PCB"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 161,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 2170763,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:41",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/am/am-c0001-e006257-u.json"
+    },
+    {
+      "uf": "AP",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 212503,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 212278,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 19057,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 11342,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 8304,
+          "party": "PSD"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 508,
+          "party": "UP"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 341,
+          "party": "NOVO"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 229,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 132,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 62,
+          "party": "PCB"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 53,
+          "party": "PCO"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 49,
+          "party": "DEMOCRATA"
+        }
+      ],
+      "valid_votes": 464858,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:40",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ap/ap-c0001-e006257-u.json"
+    },
+    {
+      "uf": "BA",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 5664771,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 2442585,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 195451,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 122705,
+          "party": "PSD"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 117518,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 6497,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 4649,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 1791,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 1676,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 1299,
+          "party": "PCB"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 724,
+          "party": "PCO"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 625,
+          "party": "DEMOCRATA"
+        }
+      ],
+      "valid_votes": 8560291,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:55",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ba/ba-c0001-e006257-u.json"
+    },
+    {
+      "uf": "BR",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 56104503,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 53879538,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 3448569,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 2675887,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 2605148,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 326488,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 122911,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 43103,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 40043,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 22693,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 16881,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 15024,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 119300788,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:47",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/br/br-c0001-e006257-u.json"
+    },
+    {
+      "uf": "CE",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 3555263,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 1756850,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 140524,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 107587,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 45604,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 4310,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 3352,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 1491,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 1071,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 783,
+          "party": "PCB"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 498,
+          "party": "PCO"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 481,
+          "party": "DEMOCRATA"
+        }
+      ],
+      "valid_votes": 5617814,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:44",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ce/ce-c0001-e006257-u.json"
+    },
+    {
+      "uf": "DF",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 909616,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 675627,
+          "party": "PT"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 85076,
+          "party": "PSD"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 46714,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 45979,
+          "party": "AVANTE"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 4915,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 2297,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 828,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 716,
+          "party": "DC"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 382,
+          "party": "PCO"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 334,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 324,
+          "party": "DEMOCRATA"
+        }
+      ],
+      "valid_votes": 1772808,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:40",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/df/df-c0001-e006257-u.json"
+    },
+    {
+      "uf": "ES",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 1233194,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 850028,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 65121,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 53236,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 39097,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 5873,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 1973,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 974,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 638,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 388,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 311,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 245,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 2251078,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:41",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/es/es-c0001-e006257-u.json"
+    },
+    {
+      "uf": "GO",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 2051888,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 1188880,
+          "party": "PT"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 472041,
+          "party": "PSD"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 54105,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 53849,
+          "party": "AVANTE"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 2672,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 2087,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 668,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 559,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 468,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 346,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 260,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 3827823,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:44",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/go/go-c0001-e006257-u.json"
+    },
+    {
+      "uf": "MA",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 2566301,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 1239040,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 84830,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 60387,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 50155,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 4584,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 1795,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 1459,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 895,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 475,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 307,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 211,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 4010439,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:45",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ma/ma-c0001-e006257-u.json"
+    },
+    {
+      "uf": "MG",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 5777548,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 5188936,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 409737,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 247209,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 230423,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 98407,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 11026,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 4085,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 3411,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 2300,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 1732,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 1421,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 11976235,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:52:05",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/mg/mg-c0001-e006257-u.json"
+    },
+    {
+      "uf": "MS",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 873351,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 516855,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 39148,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 31847,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 23291,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 2792,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 1291,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 626,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 353,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 332,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 209,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 183,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 1490278,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:41",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ms/ms-c0001-e006257-u.json"
+    },
+    {
+      "uf": "MT",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 1298581,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 581681,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 40019,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 33170,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 33079,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 2424,
+          "party": "NOVO"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 1869,
+          "party": "DC"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 1584,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 340,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 239,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 172,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 130,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 1993288,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:42",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/mt/mt-c0001-e006257-u.json"
+    },
+    {
+      "uf": "PA",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 2427237,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 2163957,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 125172,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 84165,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 51991,
+          "party": "PSD"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 3824,
+          "party": "UP"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 3064,
+          "party": "NOVO"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 1293,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 1045,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 674,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 442,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 308,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 4863172,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:45",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/pa/pa-c0001-e006257-u.json"
+    },
+    {
+      "uf": "PB",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 1541127,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 831377,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 73831,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 42247,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 19511,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 1988,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 1593,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 627,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 604,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 347,
+          "party": "PCB"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 274,
+          "party": "PCO"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 221,
+          "party": "DEMOCRATA"
+        }
+      ],
+      "valid_votes": 2513747,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:44",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/pb/pb-c0001-e006257-u.json"
+    },
+    {
+      "uf": "PE",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 3553971,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 1738043,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 137960,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 85865,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 73176,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 6060,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 2387,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 1114,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 869,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 705,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 457,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 410,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 5601017,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:44",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/pe/pe-c0001-e006257-u.json"
+    },
+    {
+      "uf": "PI",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 1523710,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 517028,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 47692,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 32274,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 21629,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 1357,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 1099,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 504,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 443,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 319,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 193,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 146,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 2146394,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:46",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/pi/pi-c0001-e006257-u.json"
+    },
+    {
+      "uf": "PR",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 3945345,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 2054597,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 205095,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 177434,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 171294,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 17172,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 6731,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 2445,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 2056,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 1195,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 962,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 917,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 6585243,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:50",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/pr/pr-c0001-e006257-u.json"
+    },
+    {
+      "uf": "RJ",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 4966844,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 3693021,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 247397,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 211843,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 199844,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 21907,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 14186,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 4082,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 3999,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 2854,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 1930,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 1793,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 9369700,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:43",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/rj/rj-c0001-e006257-u.json"
+    },
+    {
+      "uf": "RN",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 1237963,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 720493,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 57367,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 35261,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 16407,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 1525,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 1228,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 572,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 405,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 315,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 185,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 177,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 2071898,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:43",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/rn/rn-c0001-e006257-u.json"
+    },
+    {
+      "uf": "RO",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 652988,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 250667,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 25280,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 19187,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 16929,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 1318,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 843,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 356,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 174,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 160,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 97,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 60,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 968059,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:40",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/ro/ro-c0001-e006257-u.json"
+    },
+    {
+      "uf": "RR",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 231322,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 74420,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 8579,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 6623,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 3639,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 337,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 280,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 168,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 60,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 42,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 41,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 34,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 325545,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:40",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/rr/rr-c0001-e006257-u.json"
+    },
+    {
+      "uf": "RS",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 3573783,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 2294759,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 195296,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 167558,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 158821,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 18988,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 6632,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 2146,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 2066,
+          "party": "DC"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 1043,
+          "party": "PCO"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 1031,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 923,
+          "party": "DEMOCRATA"
+        }
+      ],
+      "valid_votes": 6423046,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:50",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/rs/rs-c0001-e006257-u.json"
+    },
+    {
+      "uf": "SC",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 3000020,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 1127168,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 134273,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 132795,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 79911,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 16718,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 5049,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 1503,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 1429,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 828,
+          "party": "PCB"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 643,
+          "party": "PCO"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 560,
+          "party": "DEMOCRATA"
+        }
+      ],
+      "valid_votes": 4500897,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:45",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/sc/sc-c0001-e006257-u.json"
+    },
+    {
+      "uf": "SE",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 856019,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 417839,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 38895,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 26651,
+          "party": "PSD"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 21405,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 1158,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 991,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 457,
+          "party": "DC"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 331,
+          "party": "PSTU"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 204,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 138,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 108,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 1364196,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:41",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/se/se-c0001-e006257-u.json"
+    },
+    {
+      "uf": "SP",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 12922023,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 9505413,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 892368,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 804310,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 579571,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 94635,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 42532,
+          "party": "UP"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 15815,
+          "party": "PSTU"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 10563,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 6129,
+          "party": "PCB"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 5160,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 4429,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 24882948,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:59",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/sp/sp-c0001-e006257-u.json"
+    },
+    {
+      "uf": "TO",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 469321,
+          "party": "PL"
+        },
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 404009,
+          "party": "PT"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 22434,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 20189,
+          "party": "PSD"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 12983,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 595,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 395,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 171,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 117,
+          "party": "PCB"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 101,
+          "party": "PSTU"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 67,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 65,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 930447,
+      "sections_percent": "100,00",
+      "tse_generated_at": "05/10/2026 12:51:42",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/to/to-c0001-e006257-u.json"
+    },
+    {
+      "uf": "ZZ",
+      "round": "1",
+      "candidates": [
+        {
+          "name": "LULA",
+          "number": "13",
+          "votes": 157387,
+          "party": "PT"
+        },
+        {
+          "name": "FLAVIO BOLSONARO",
+          "number": "22",
+          "votes": 143900,
+          "party": "PL"
+        },
+        {
+          "name": "ESCRITOR AUGUSTO CURY",
+          "number": "70",
+          "votes": 9734,
+          "party": "AVANTE"
+        },
+        {
+          "name": "RENAN SANTOS",
+          "number": "14",
+          "votes": 8580,
+          "party": "MISSÃO"
+        },
+        {
+          "name": "RONALDO CAIADO",
+          "number": "55",
+          "votes": 4708,
+          "party": "PSD"
+        },
+        {
+          "name": "ZEMA",
+          "number": "30",
+          "votes": 3329,
+          "party": "NOVO"
+        },
+        {
+          "name": "SAMARA",
+          "number": "80",
+          "votes": 1053,
+          "party": "UP"
+        },
+        {
+          "name": "CLARIANA BARAO",
+          "number": "27",
+          "votes": 825,
+          "party": "DC"
+        },
+        {
+          "name": "EDMILSON COSTA",
+          "number": "21",
+          "votes": 421,
+          "party": "PCB"
+        },
+        {
+          "name": "HERTZ DIAS",
+          "number": "16",
+          "votes": 373,
+          "party": "PSTU"
+        },
+        {
+          "name": "VETERINÁRIO WILSON GRASSI",
+          "number": "35",
+          "votes": 373,
+          "party": "DEMOCRATA"
+        },
+        {
+          "name": "RUI COSTA PIMENTA",
+          "number": "29",
+          "votes": 199,
+          "party": "PCO"
+        }
+      ],
+      "valid_votes": 330882,
+      "sections_percent": "100,00",
+      "tse_generated_at": "24/10/2026 20:12:57",
+      "source": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/zz/zz-c0001-e006257-u.json"
+    }
+  ]
+}
