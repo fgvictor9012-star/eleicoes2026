@@ -30,12 +30,18 @@ jobs:
         with:
           ref: main
 
-      - name: Validar HTML correto antes de atualizar
+      - name: Validar HTML atualizado
+        shell: bash
         run: |
-          echo "Verificando versao do HTML..."
-          grep -q 'PORTAL-2026-VISUAL-FINAL-2510' index.html
+          echo "Verificando HTML do portal..."
+
+          test -f index.html
+
+          grep -q 'PORTAL-2026-PACOTE-INTEGRADO-2510' index.html
           grep -q '<style>' index.html
-          echo "OK: HTML novo encontrado, com CSS integrado."
+          grep -q '</style>' index.html
+
+          echo "OK: HTML atualizado e CSS integrado encontrados."
 
       - name: Preparar Python
         uses: actions/setup-python@v5
@@ -43,12 +49,15 @@ jobs:
           python-version: "3.11"
 
       - name: Instalar dependencias
-        run: python -m pip install requests
+        run: |
+          python -m pip install requests
 
       - name: Consultar resultados oficiais do TSE
-        run: python update.py
+        run: |
+          python update.py
 
-      - name: Preparar arquivos para publicacao
+      - name: Preparar site para publicacao
+        shell: bash
         run: |
           mkdir -p _site
 
@@ -64,14 +73,18 @@ jobs:
 
           touch _site/.nojekyll
 
-          grep -q 'PORTAL-2026-VISUAL-FINAL-2510' _site/index.html
+          echo "Validando arquivo que sera publicado..."
 
-          echo "OK: versao correta preparada para publicacao."
+          grep -q 'PORTAL-2026-PACOTE-INTEGRADO-2510' _site/index.html
+          grep -q '<style>' _site/index.html
+
+          echo "OK: pacote correto preparado."
+          ls -lah _site/
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Enviar site
+      - name: Enviar arquivos do portal
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
@@ -82,5 +95,5 @@ jobs:
 
       - name: Confirmar publicacao
         run: |
-          echo "Publicacao concluida."
+          echo "Portal publicado."
           echo "URL: ${{ steps.deployment.outputs.page_url }}"
