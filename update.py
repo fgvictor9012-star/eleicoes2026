@@ -79,7 +79,7 @@ def persist_history(new_round2,checked_at):
    if n=='13' or 'LULA' in name:counts[0]+=votes
    elif n=='22' or ('FLAVIO' in name and 'BOLSONARO' in name):counts[1]+=votes
    else:counts[2]+=votes
-  point={'time':checked_at,'sections_percent':progress,'sections_total':s.get('ts'),'sections_counted':s.get('st'),'valid_votes':int(row['valid_votes']),'counts':counts,'tse_generated_at':row.get('tse_generated_at','')}
+  point={'time':checked_at,'sections_percent':progress,'sections_total':row.get('sections_total'),'sections_counted':row.get('sections_counted'),'valid_votes':int(row['valid_votes']),'counts':counts,'tse_generated_at':row.get('tse_generated_at','')}
   records=loc.setdefault(row['uf'],[])
   # No duplicate snapshots when official tally is unchanged.
   if records and records[-1].get('sections_percent')==progress and records[-1].get('counts')==counts:continue
@@ -95,6 +95,12 @@ def main():
  if OUT.exists():
   try:old=json.loads(OUT.read_text(encoding='utf-8'))
   except Exception:pass
+ # Prior deployment is the data source of truth because GitHub Pages actions don't commit JSON.
+ if not old.get('results'):
+  try:
+   previous=fetch(PUBLISHED+'/data/results.json?nocache='+str(int(time.time())))
+   if isinstance(previous,dict) and isinstance(previous.get('results'),list):old=previous
+  except Exception as e:print('Sem resultados publicados anteriores:',str(e)[:100])
  entries={(r['uf'],r['round']):r for r in old.get('results',[]) if isinstance(r,dict) and 'uf' in r and 'round' in r}
  errors=[];success=0;fresh_second=[]
  for turn,ele in ELECTIONS.items():
