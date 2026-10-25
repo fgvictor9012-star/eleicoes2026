@@ -1,3 +1,5 @@
+:root{font-family:Inter,Segoe UI,Arial,sans-serif;color:#162b43;background:#f1f5fa}*{box-sizing:border-box}body{margin:0}header{background:#0b2139;color:white;padding:24px 0 26px}.wrap{max-width:1200px;margin:auto;padding:0 20px}.top,.toolbar,.tableHead{display:flex;justify-content:space-between;gap:18px;align-items:center}.top small{letter-spacing:2px;color:#7bd6d5;font-weight:700}h1{font-size:38px;margin:3px 0}h1 span{font-size:11px;color:#55e0a5;vertical-align:middle}header p{margin:0;color:#c4d3e2}.clock{text-align:right;font-size:13px;color:#bbd0e0}.clock #status{display:inline-block;background:#214661;color:#bbf4e2;padding:7px 12px;border-radius:30px;margin-bottom:9px;font-weight:700}button{cursor:pointer;border:1px solid #c9d6e4;border-radius:9px;background:white;padding:10px 14px;color:#143e61;font-weight:650}#reload{margin-top:8px;background:transparent;color:white;border-color:#63809a}main{padding-top:22px!important}.note{background:#e5f3fa;border-left:4px solid #177ba1;padding:13px 16px;border-radius:8px;line-height:1.55;margin-bottom:19px;font-size:14px}.note a{color:#0a6182}.muted{background:#f9fbff;border-color:#b6c7db;margin-top:16px}.toolbar{flex-wrap:wrap;margin-bottom:17px}.toolbar label{font-size:13px;color:#4e657c;font-weight:700;flex:1;min-width:200px}.toolbar select,.toolbar input{display:block;margin-top:6px;width:100%;height:42px;padding:10px;border:1px solid #d1dce6;border-radius:8px;background:white;font-size:14px}.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:17px}.tiles article,.panel{background:white;border:1px solid #e1e9f2;box-shadow:0 4px 20px #10293c08;border-radius:14px;padding:21px}.tiles article small{font-size:12px;color:#6b8198;font-weight:750;letter-spacing:1px}.tiles h2{font-size:28px;margin:12px 0 7px}.tiles p{margin:0;color:#648097;font-size:13px}.layout{display:grid;grid-template-columns:1.2fr 1fr;gap:17px;margin-bottom:17px}.panel h2{font-size:19px;margin:0 0 8px}.panel>p{font-size:13px;color:#637c93;line-height:1.5}.map{height:355px;display:flex;align-items:center;justify-content:center;overflow:hidden}.map svg{height:100%;max-width:100%}.map path{fill:#d7e6f0;stroke:#fff;stroke-width:.9;cursor:pointer;transition:fill .15s}.map path:hover,.map path.active{fill:#007e9a}.mapFallback{display:flex;flex-wrap:wrap;gap:5px}.mapFallback button{font-size:11px;padding:5px 8px;border-color:#d8e5ed}.mapFallback button.selected{background:#086d89;color:white}.empty{padding:48px 12px;color:#7a8da0;text-align:center}.barrow{margin:15px 0 23px}.barrow .title{display:flex;justify-content:space-between;margin-bottom:6px;font-size:13px;font-weight:700}.track{height:14px;background:#edf2f7;border-radius:30px;overflow:hidden}.fill{height:100%;background:#0c93b0;border-radius:30px}.fill.secondary{background:#d38f4a}.barrow small{display:block;color:#697c91;margin-top:5px}.foot{font-size:12px!important;color:#8192a5!important}.tablePanel{margin-bottom:12px}.tableHead span{font-size:12px;color:#8194a5}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:890px;font-size:13px}th,td{padding:13px 9px;border-bottom:1px solid #eaf0f6;text-align:right;white-space:nowrap}th:first-child,td:first-child{text-align:left}th{color:#637b92;background:#f7fafc;font-weight:700}td:first-child{font-weight:650}.up{color:#078263}.down{color:#bc5262}footer{padding-top:15px!important;padding-bottom:25px!important;color:#8594a4;font-size:12px}@media(max-width:850px){.layout{grid-template-columns:1fr}.tiles{grid-template-columns:1fr 1fr}.top{align-items:flex-start}.top h1{font-size:29px}.tiles h2{font-size:22px}.clock{max-width:170px}}@media(max-width:520px){.top{flex-direction:column}.clock{text-align:left}.tiles{grid-template-columns:1fr}.toolbar{align-items:stretch}.toolbar>*{width:100%}.map{height:290px}} 
+
 /* OBSERVATORIO ELEITORAL 2026 — tema escuro inspirado na linguagem visual
    de dashboards de alto contraste. Não altera nem inventa dados. */
 :root {
@@ -44,3 +46,20 @@ canvas,svg { max-width:100%; }
 /* Não recolorir os estados individualmente: a cor do mapa deve refletir uma legenda de dados, se houver */
 footer { color:var(--muted) !important; }
 @media (max-width:720px){ h1 { font-size:2rem; } th,td {padding:.5rem .4rem;} }
+
+
+/* Ajustes de contraste do mapa e filtros no tema escuro */
+.map path { fill:#263c4a; stroke:#7894a3; }
+.map path:hover, .map path.active { fill:#b7ff32; stroke:#0a1016; }
+.mapFallback button { background:#1b2531; color:#eaf5f9; }
+.mapFallback button.selected {background:#b7ff32;color:#0a1016;}
+.clock, .clock #status {color:#d8e8ee;}
+.clock #status {background:#23453a;}
+.tiles p, .tiles article small, .panel>p, .foot, .tableHead span, .barrow small {color:#b5c6d2;}
+.track {background:#283947;}
+.fill {background:#b7ff32;}
+.fill.secondary {background:#25d8eb;}
+.note {background:#12303b;color:#e3f2f5;border-left-color:#25d8eb;}
+.note a {color:#25d8eb;}
+.toolbar label {color:#d4e3ec;}
+.empty {color:#a9bbc7;}
